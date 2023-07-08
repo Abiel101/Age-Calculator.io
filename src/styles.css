@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.input{
+  @apply border border-borderGray hover:border-accent rounded-md text-2xl font-semibold px-6 py-3 w-full focus:border-accent cursor-pointer outline-none;
+}
+.error{
+  @apply border border-red-500 hover:border-red-500 rounded-md text-2xl font-semibold px-6 py-3 w-full focus:border-accent cursor-pointer outline-none;
+}
+.text-red{
+  @apply text-red-500 translate-x-5;
+}

@@ -23,24 +23,6 @@ const submitBtn = document.getElementById('submit-btn');
 const d = new Date();
 let year = d.getFullYear();
 
-// Checking for Leap Years
-// let leapYear = false;
-// function daysInMonth (month, year) { // Use 1 for January, 2 for February, etc.
-//   return new Date(year, month, 0).getDate(); //Gets the days in this month
-// }
-// if(daysInMonth(2, date.getFullYear) == 29){
-//   leapYear = true;
-//   months = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-//   console.log(leapYear);
-// }else{
-//   leapYear = false;
-//   months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-//   console.log(leapYear);
-// }
-
-
-
-
 
 // Check error and correct functions
 function errorCheck(input, label, error) {

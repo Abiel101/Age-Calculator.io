@@ -40,6 +40,14 @@ Users should be able to:
 
 ## My process
 <!-- Explain my over all process on how I managed to brake it down and figure out how to build the website little by little. -->
+The most important part of this project was braking things down into smaller pieces so that I was able to quickly build this project.
+<br>
+First I broke down the design so that I can section off the inputs, button and results. This helped me give each part of the button its own moment of focus. Instead focusing in the project as a whole I broke it down it these three sections to more easily build it with tailwind CSS. I also work on the entire layout as well. In a sense I focus on planning the project more and spent less time building it.
+<br>
+<br>
+Here is a picture of how I broke things down using the design given to me:
+![My process, braking things down](./public/design/IMG_1319.png)
+
 ### Built with
 
 - HTML 5
@@ -83,23 +91,22 @@ if(inputDay.value > daysInTheMonth){
 ### Continued development
 
 Over all this project was a great challenge that I was able to take on and test my new tailwind CSS skills. Despite that I did see places where I could improve my skills.
-
-<p style="font-weight:bold; text-decoration: underline; color: #25a8b5;">Tailwind CSS</p>
+<br>
+<br>
 For tailwind my focus will be to improve my layout skills. Tailwind CSS prioritize mobile first meaning that it is best to start with mobile and then work you way up to tablet, desktop screen size and larger. Since on my practice projects it has always been desktop first then mobile I will work on improving my skill to work the other way around. 
 Then I will also deepen my knowledge in tailwind to utilize other parts of tailwind CSS like creating more custom classes and possibly a themes to have a dark mode and light mode on my next project.
-
 <br>
-<p style="font-weight: bold; text-decoration: underline; color: #cbc127;">Javascript</p>
+<br>r
 For Javascript, I will aim to not have so many if/else statements. I noticed how I utilized that heavily on this project and although it gave me the solution I wanted there could be better ones. Maybe the way I organize my javascript could also use some improvement as well.
 
 ### Useful resources
 
-- [Javascript Age Calculator](https://dev.to/code_mystery/javascript-age-calculator-calculate-age-from-date-of-birth-o9b) - This article by Foolish Developer, helped me to understand how I could get the result for the amount of days.
+- <a href="https://dev.to/code_mystery/javascript-age-calculator-calculate-age-from-date-of-birth-o9b" style="color: #9BD076">Javascript Age Calculator</a> - This article by Foolish Developer, helped me to understand how I could get the result for the amount of days.
 
-- [Tailwind CSS Website](https://tailwindcss.com/docs/installation) - This is the resource I used to write my tailwind CSS. Although I have my own notes, there were somethings that I needed to figure out that I didn't have on my notes. The Tailwind CSS website is a pretty amazing resource to quickly find the classes you need for centering, changing colors, etc.
+- <a href="https://tailwindcss.com/docs/installation" style="color: #9BD076">Tailwind CSS Website</a> - This is the resource I used to write my tailwind CSS. Although I have my own notes, there were somethings that I needed to figure out that I didn't have on my notes. The Tailwind CSS website is a pretty amazing resource to quickly find the classes you need for centering, changing colors, etc.
 
 ## Author
 
-- Website - [Abiel Ortega](https://abiel-code-dev.webflow.io)
-- Frontend Mentor - [@Abiel101](https://www.frontendmentor.io/profile/Abiel101)
-- Twitter - [@abielcodedev](https://www.twitter.com/abielcodedev)
+- Website - <a href="https://abiel-code-dev.webflow.io" style="color: #9BD076">Abiel Ortega</a>
+- Frontend Mentor - <a href="https://www.frontendmentor.io/profile/Abiel101" style="color: #9BD076">@Abiel101</a>
+- Twitter - <a href="https://www.twitter.com/abielcodedev" style="color: #9BD076">@abielcodedev</a>

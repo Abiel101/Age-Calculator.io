@@ -33,83 +33,73 @@ Users should be able to:
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
 ### Screenshot
-![Design preview for the Age calculator app coding challenge](./public/design/desktop-preview.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Design preview for the Age calculator app coding challenge](./public/design/desktop-completed.jpg)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Demo](https://abiel101.github.io/Age-Calculator.io/public/index.html)
 
 ## My process
-
+<!-- Explain my over all process on how I managed to brake it down and figure out how to build the website little by little. -->
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
+- HTML 5
+- Tailwind CSS
+- Javascript
+- NodeJS
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned alot. The first thing I learn is that I need a brush up in my JavaScript which is exactly what I did. I utilized some of the knowledge I had to be able to return data from a function as an array which is how I get the output results. It was a lot of trial an error but definitly a lot of fun seeing where I could improve my skills in javascript.
 
-To see how you can add code snippets, see below:
+### Code Highlights
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+<h3 style="color:#25a8b5; font-weight:bold">Tailwind CSS</h3>
+My First customs Tailwind CSS classes help me create the input and when ever they have an error.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.input{
+  @apply border border-borderGray hover:border-accent rounded-md text-2xl font-semibold px-6 py-3 w-full focus:border-accent cursor-pointer outline-none;
+}
+.error{
+  @apply border border-red-500 hover:border-red-500 rounded-md text-2xl font-semibold px-6 py-3 w-full focus:border-accent cursor-pointer outline-none;
+}
+.text-red{
+  @apply text-red-500 translate-x-5;
 }
 ```
+<br>
+<h3 style="color: #cbc127; font-weight: bold;">Javascript</h3>
+This variable stores the number of days there are in the month that the user inputs. Once the user clicks enter the value inside this variable gets used to determine whether or not the user inputed the correct amount of days in the specific month they chose.
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+let daysInTheMonth = new Date(inputYear.value, inputMonth.value, 0).getDate(); 
+
+if(inputDay.value > daysInTheMonth){
+    errorCheck(inputDay, dayLabel, errorDay);
+    errorDay.innerHTML = "Must be a valid day";
+  }
+
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Over all this project was a great challenge that I was able to take on and test my new tailwind CSS skills. Despite that I did see places where I could improve my skills.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+<p style="font-weight:bold; text-decoration: underline; color: #25a8b5;">Tailwind CSS</p>
+For tailwind my focus will be to improve my layout skills. Tailwind CSS prioritize mobile first meaning that it is best to start with mobile and then work you way up to tablet, desktop screen size and larger. Since on my practice projects it has always been desktop first then mobile I will work on improving my skill to work the other way around. 
+Then I will also deepen my knowledge in tailwind to utilize other parts of tailwind CSS like creating more custom classes and possibly a themes to have a dark mode and light mode on my next project.
+
+<br>
+<p style="font-weight: bold; text-decoration: underline; color: #cbc127;">Javascript</p>
+For Javascript, I will aim to not have so many if/else statements. I noticed how I utilized that heavily on this project and although it gave me the solution I wanted there could be better ones. Maybe the way I organize my javascript could also use some improvement as well.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Javascript Age Calculator](https://dev.to/code_mystery/javascript-age-calculator-calculate-age-from-date-of-birth-o9b) - This article by Foolish Developer, helped me to understand how I could get the result for the amount of days.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Tailwind CSS Website](https://tailwindcss.com/docs/installation) - This is the resource I used to write my tailwind CSS. Although I have my own notes, there were somethings that I needed to figure out that I didn't have on my notes. The Tailwind CSS website is a pretty amazing resource to quickly find the classes you need for centering, changing colors, etc.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Abiel Ortega](https://abiel-code-dev.webflow.io)
+- Frontend Mentor - [@Abiel101](https://www.frontendmentor.io/profile/Abiel101)
+- Twitter - [@abielcodedev](https://www.twitter.com/abielcodedev)

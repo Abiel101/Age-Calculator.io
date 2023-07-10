@@ -8,9 +8,9 @@
   <title>Age calculator app</title>
 </head>
 <body>
-  <main class="font-poppins flex items-center justify-center bg-gray-200 h-screen sm:px-2">
+  <main class="pt-20 px-2 font-poppins md:flex items-center justify-center bg-gray-200 h-screen">
     <!-- Container for aga calculator -->
-    <div class="bg-white p-14 md:w-3/5 rounded-3xl rounded-br-massive">
+    <div class="h-2/3 md:h-4/5 w-full bg-white p-6 md:p-14 md:w-3/5 max-w-4xl rounded-3xl rounded-br-big md:rounded-br-massive">
       <!-- Inputs -->
       <form class="flex w-ful text-lg gap-3 uppercase font-semibold">
 
@@ -34,22 +34,22 @@
       </form>
 
       <!-- Divider and button -->
-      <div class="flex items-center justify-between w-full relative sm:h-20 sm:mb-3 sm:mt-8">
+      <div class="flex items-center justify-between w-full relative h-20 mb-6 mt-10 md:mb-0 md:mt-5">
         <span class="w-full border border-dividLine"></span>
         <div>
-          <button type="button" id="submit-btn" class=" transition ease-in-out duration-300 rounded-full bg-accent md:relative md:right-0 md:w-24 md:h-24 flex items-center justify-center hover:bg-textBlack absolute top-0 left-1/2 -translate-x-1/2 w-20 h-20"><img src="assets/images/icon-arrow.svg" alt="icon-arrow" srcset=""></button>
+          <button type="button" id="submit-btn" class=" transition ease-in-out duration-300 rounded-full bg-accent md:relative md:right-0 md:w-24 md:h-24 flex items-center justify-center hover:bg-textBlack absolute top-0 left-1/2 -translate-x-1/2 w-20 h-20"><img class="w-8 md:w-12" src="assets/images/icon-arrow.svg" alt="icon-arrow" srcset=""></button>
         </div>
       </div>
 
       <!-- Output -->
-      <div class="font-extrabold italic cursor-default">
-        <div class="text-8xl">
+      <div class="font-extrabold italic cursor-default pt-5 md:pt-0">
+        <div class="text-6xl md:text-7xl lg:text-8xl">
           <h2><span class="text-accent" id="year_output">--</span>years</h2>
         </div>
-        <div class="text-8xl">
+        <div class="text-6xl md:text-7xl lg:text-8xl">
           <h2><span class="text-accent" id="month_output">--</span>months</h2>
         </div>
-        <div class="text-8xl">
+        <div class="text-6xl md:text-7xl lg:text-8xl">
           <h2><span class="text-accent" id="day_output">--</span>days</h2>
         </div>
       </div>

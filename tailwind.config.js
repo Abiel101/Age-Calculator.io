@@ -13,7 +13,8 @@ module.exports = {
         poppins: 'Poppins'
       },
       borderRadius:{
-        massive: '12.5rem'
+        massive: '12.5rem',
+        big: '10rem'
       }
     },
   },

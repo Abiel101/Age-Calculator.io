@@ -61,7 +61,6 @@ if(birthMonth > currentMonth){
   currentMonth = currentMonth + 12;
   currentYear = currentYear - 1;
 }
-//TODO: These are not being defined.
 let d = currentDay - birthDay;
 let m = currentMonth - birthMonth;
 let y = currentYear - birthYear;

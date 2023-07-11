@@ -554,6 +554,10 @@ input[type="number"]::-webkit-inner-spin-button,
   top: 0px;
 }
 
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -562,44 +566,28 @@ input[type="number"]::-webkit-inner-spin-button,
   margin-top: 2.5rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.ml-2{
+  margin-left: 0.5rem;
 }
 
-.mb-5{
-  margin-bottom: 1.25rem;
+.ml-1{
+  margin-left: 0.25rem;
 }
 
 .flex{
   display: flex;
 }
 
-.h-2\/3{
-  height: 66.666667%;
-}
-
 .h-20{
   height: 5rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.h-2\/5{
-  height: 40%;
-}
-
-.h-3\/5{
-  height: 60%;
-}
-
-.h-3\/6{
-  height: 50%;
-}
-
 .h-4\/5{
   height: 80%;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-20{
@@ -712,13 +700,8 @@ input[type="number"]::-webkit-inner-spin-button,
   font-family: Poppins;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -735,11 +718,6 @@ input[type="number"]::-webkit-inner-spin-button,
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-extrabold{
@@ -773,6 +751,11 @@ input[type="number"]::-webkit-inner-spin-button,
 .text-accent{
   --tw-text-opacity: 1;
   color: rgb(133 77 255 / var(--tw-text-opacity));
+}
+
+.text-green-300{
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity));
 }
 
 .transition{
@@ -874,9 +857,14 @@ input[type="number"]::-webkit-inner-spin-button,
   background-color: rgb(21 21 21 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-purple-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 213 255 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 640px){
-  .sm\:mb-0{
-    margin-bottom: 0px;
+  .sm\:mb-5{
+    margin-bottom: 1.25rem;
   }
 
   .sm\:text-6xl{
@@ -910,14 +898,6 @@ input[type="number"]::-webkit-inner-spin-button,
     height: 6rem;
   }
 
-  .md\:h-4\/5{
-    height: 80%;
-  }
-
-  .md\:h-full{
-    height: 100%;
-  }
-
   .md\:h-3\/6{
     height: 50%;
   }
@@ -930,20 +910,12 @@ input[type="number"]::-webkit-inner-spin-button,
     width: 6rem;
   }
 
-  .md\:w-3\/5{
-    width: 60%;
-  }
-
   .md\:w-4\/5{
     width: 80%;
   }
 
   .md\:rounded-br-massive{
     border-bottom-right-radius: 12.5rem;
-  }
-
-  .md\:p-14{
-    padding: 3.5rem;
   }
 
   .md\:p-8{

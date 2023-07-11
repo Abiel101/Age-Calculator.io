@@ -8,41 +8,41 @@
   <title>Age calculator app</title>
 </head>
 <body>
-  <main class="pt-20 px-2 font-poppins md:flex items-center justify-center bg-gray-200 h-screen">
+  <main class="pt-20 md:pt-0 px-2 font-poppins flex md:items-center justify-center bg-gray-200 h-screen snap-mandatory">
     <!-- Container for aga calculator -->
-    <div class="h-4/5 md:h-3/6 w-full bg-white p-6 md:p-8 md:w-4/5 lg:w-3/5 max-w-4xl rounded-3xl rounded-br-big md:rounded-br-massive">
+    <div class="h-4/5 sm:h-4/5 md:h-3/4 w-full bg-white p-6 sm:p-10 md:p-16 md:w-4/5 lg:w-4/5 lg:h-4/5 max-w-4xl rounded-3xl rounded-br-big md:rounded-br-massive">
       <!-- Inputs -->
-      <form class="flex w-ful text-lg gap-3 uppercase font-semibold">
+      <form class="mb-10 md:mb-0 flex w-full text-lg gap-3 uppercase font-semibold">
 
         <div class="w-40 gap-2 relative">
           <label id="label_day" for="Day" class="text-sm tracking-widest">Day</label>
           <input id="input_day" type="number" placeholder="DD" class="input">
-          <span id="error_day" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic  normal-case text-center absolute -bottom-5 -left-5"></span>
+          <span id="error_day" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic  normal-case text-center absolute -bottom-9 -left-6 md:-bottom-5 md:-left-5"></span>
         </div>
 
         <div class="w-40 gap-2 relative">
           <label id="label_month" for="Month" class="text-sm tracking-widest">Month</label>
           <input id="input_month" type="number" placeholder="MM" class="input">
-          <span id="error_month" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic  normal-case text-center absolute -bottom-5 -left-5"></span>
+          <span id="error_month" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic  normal-case text-center absolute -bottom-9 -left-6 md:-bottom-5 md:-left-5"></span>
         </div>
 
         <div class="w-40 gap-2 relative">
           <label id="label_year" for="Year" class="text-sm tracking-widest">Year</label>
           <input id="input_year" name="year" maxlength="4" type="number" placeholder="YYYY" class="input">
-          <span id="error_year" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic  normal-case text-center absolute -bottom-5 -left-5"></span>
+          <span id="error_year" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic normal-case text-center absolute -bottom-9 -left-6 md:-bottom-5 md:-left-5"></span>
         </div>
       </form>
 
       <!-- Divider and button -->
-      <div class="flex items-center justify-between w-full relative h-20 mb-6 mt-10 md:mb-0 md:mt-5">
+      <div class="flex items-center justify-between w-full relative h-20 mb-6 mt-10 md:mb-10 md:mt-0 md:pt-16">
         <span class="w-full border border-dividLine"></span>
         <div>
-          <button type="button" id="submit-btn" class=" transition ease-in-out duration-300 rounded-full bg-accent md:relative md:right-0 md:w-24 md:h-24 flex items-center justify-center hover:bg-textBlack absolute top-0 left-1/2 -translate-x-1/2 w-20 h-20"><img class="w-8 md:w-12" src="assets/images/icon-arrow.svg" alt="icon-arrow" srcset=""></button>
+          <button type="button" id="submit-btn" class=" transition ease-in-out duration-300 rounded-full bg-accent sm:relative sm:right-0 md:w-24 md:h-24 flex items-center justify-center hover:bg-textBlack absolute top-0 left-1/2 -translate-x-1/2 w-20 h-20"><img class="w-8 md:w-12" src="assets/images/icon-arrow.svg" alt="icon-arrow" srcset=""></button>
         </div>
       </div>
 
       <!-- Output -->
-      <div class="font-extrabold italic cursor-default pt-5 md:pt-0">
+      <div class="font-extrabold italic cursor-default pt-5 sm:pt-0">
         <div class="text-5xl sm:mb-5 md:mb-0 sm:text-6xl md:text-7xl lg:text-8xl">
           <h2><span class="text-accent" id="year_output">--</span>years</h2>
         </div>
@@ -56,9 +56,10 @@
     </div>
   </main>
   
-  <div class="w-full h-screen flex items-center justify-center">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-green-300 hover:bg-purple-200 ml-1">Frontend Mentor</a>. 
-    Coded by <a class="text-green-300 hover:bg-purple-200 ml-1" href="https://www.frontendmentor.io/profile/Abiel101"> Abiel Ortega </a>.
+  <div class="w-full h-screen flex items-center justify-center snap-center">
+    <p class="text-center">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-green-300 hover:text-purple-200 ml-1">Frontend Mentor</a>. 
+    Coded by <a class="text-green-300 hover:text-purple-200 ml-1" href="https://www.frontendmentor.io/profile/Abiel101"> Abiel Ortega </a>.
+    </p>
   </div>
 
   <!-- Link to the javascript -->

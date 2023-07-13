@@ -1,5 +1,5 @@
+// Loading animation 
 const logoText = new SplitType('#logo-text');
-
 gsap.to('.char', {
   y: 0,
   stagger: 0.05,
@@ -30,6 +30,8 @@ gsap.fromTo('#calculator', {
   duration: 1,
 })
 
+
+// Removing the overflow-hidden on body to be able to scroll after 6 seconds
 const body = document.getElementById("body");
 
 let interval = setInterval(bodyLog, 6000);

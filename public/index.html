@@ -8,9 +8,15 @@
   <title>Age calculator app</title>
 </head>
 <body>
+  <!-- loading animation -->
+  <div id="loader" class=" font-poppins font-bold absolute z-10 w-screen h-screen bg-white grid place-content-center overflow-y-hidden">
+    <h1 id="logo-text" class="relative polygon uppercase text-4xl text-accent">Age Calculator</h1>
+  </div>
+
+
   <main class="pt-20 md:pt-0 px-2 font-poppins flex md:items-center justify-center bg-gray-200 h-screen snap-mandatory">
     <!-- Container for aga calculator -->
-    <div class="h-4/5 sm:h-4/5 md:h-3/4 w-full bg-white p-6 sm:p-10 md:p-16 md:w-4/5 lg:w-4/5 lg:h-4/5 max-w-4xl rounded-3xl rounded-br-big md:rounded-br-massive">
+    <div id="calculator" class="h-4/5 sm:h-4/5 md:h-3/4 w-full bg-white p-6 sm:p-10 md:p-16 md:w-4/5 lg:w-4/5 lg:h-4/5 max-w-4xl rounded-3xl rounded-br-big md:rounded-br-massive">
       <!-- Inputs -->
       <form class="mb-10 md:mb-0 flex w-full text-lg gap-3 uppercase font-semibold">
 
@@ -63,6 +69,12 @@
   </div>
 
   <!-- Link to the javascript -->
-  <script src="index.js"></script>
+  <!-- Gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Split type -->
+  <script src="https://unpkg.com/split-type"></script>
+<!-- External files -->
+  <script src="js/animation.js"></script>
+  <script src="js/index.js"></script>
 </body>
-</html>
+</html> 

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
   },
   "keywords": [],
@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "motion": "^10.16.2"
   }
 }

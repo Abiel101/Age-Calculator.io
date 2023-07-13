@@ -11,6 +11,12 @@
     margin: 0;
   }
 }
+.polygon{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+.char{
+  @apply translate-y-36 transition-transform duration-75 overflow-hidden;
+}
 .input{
   @apply border border-borderGray hover:border-accent rounded-md text-2xl font-semibold p-2 md:px-6 md:py-3 w-full focus:border-accent cursor-pointer outline-none;
 }

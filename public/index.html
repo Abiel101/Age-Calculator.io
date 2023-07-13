@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+    <!-- Gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
   <title>Age calculator app</title>
 </head>
-<body>
+<body id="body" class="scrollBar overflow-hidden">
   <!-- loading animation -->
   <div id="loader" class=" font-poppins font-bold absolute z-10 w-screen h-screen bg-white grid place-content-center overflow-y-hidden">
-    <h1 id="logo-text" class="relative polygon uppercase text-4xl text-accent">Age Calculator</h1>
+    <h1 id="logo-text" class="relative polygon uppercase text-4xl text-accent leading-10">Age Calculator</h1>
   </div>
 
 
   <main class="pt-20 md:pt-0 px-2 font-poppins flex md:items-center justify-center bg-gray-200 h-screen snap-mandatory">
     <!-- Container for aga calculator -->
-    <div id="calculator" class="h-4/5 sm:h-4/5 md:h-3/4 w-full bg-white p-6 sm:p-10 md:p-16 md:w-4/5 lg:w-4/5 lg:h-4/5 max-w-4xl rounded-3xl rounded-br-big md:rounded-br-massive">
+    <div id="calculator" class="h-4/5 sm:h-4/5 md:h-3/4 w-full bg-white p-8 sm:p-10 md:p-16 md:w-4/5 lg:w-4/5 lg:h-4/5 max-w-4xl rounded-3xl rounded-br-big md:rounded-br-massive max-h-[650px]">
       <!-- Inputs -->
       <form class="mb-10 md:mb-0 flex w-full text-lg gap-3 uppercase font-semibold">
 
@@ -69,8 +71,7 @@
   </div>
 
   <!-- Link to the javascript -->
-  <!-- Gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- Split type -->
   <script src="https://unpkg.com/split-type"></script>
 <!-- External files -->

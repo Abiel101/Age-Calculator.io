@@ -13,7 +13,7 @@ const yearLabel = document.getElementById('label_year');
 const errorDay = document.getElementById('error_day');
 const errorMonth = document.getElementById('error_month');
 const errorYear = document.getElementById('error_year');
-// Output selectors
+// Output
 const dayOutput = document.getElementById('day_output');
 const monthOutput = document.getElementById('month_output');
 const yearOutput = document.getElementById('year_output');

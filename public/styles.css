@@ -785,44 +785,8 @@ input[type="number"]::-webkit-inner-spin-button,
   font-style: italic;
 }
 
-.leading-\[10rem\]{
-  line-height: 10rem;
-}
-
-.leading-\[5\.9rem\]{
-  line-height: 5.9rem;
-}
-
-.leading-\[5rem\]{
-  line-height: 5rem;
-}
-
-.leading-\[rem\]{
-  line-height: rem;
-}
-
-.leading-\[1rem\]{
-  line-height: 1rem;
-}
-
 .leading-\[2rem\]{
   line-height: 2rem;
-}
-
-.leading-\[1\.5rem\]{
-  line-height: 1.5rem;
-}
-
-.leading-\[1\.rem\]{
-  line-height: 1.rem;
-}
-
-.leading-\[1\.9rem\]{
-  line-height: 1.9rem;
-}
-
-.leading-\[1\.8rem\]{
-  line-height: 1.8rem;
 }
 
 .tracking-widest{
@@ -986,6 +950,10 @@ input[type="number"]::-webkit-inner-spin-button,
 
   .sm\:mb-5{
     margin-bottom: 1.25rem;
+  }
+
+  .sm\:hidden{
+    display: none;
   }
 
   .sm\:h-4\/5{

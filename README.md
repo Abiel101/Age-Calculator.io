@@ -46,21 +46,25 @@ First I broke down the design so that I can section off the inputs, button and r
 <br>
 <br>
 Here is a picture of how I broke things down using the design given to me:
+
 ![My process, braking things down](./public/design/IMG_1319.png)
-
 ### Built with
-
 - HTML 5
 - Tailwind CSS
 - Javascript
 - NodeJS
+- GSAP
 ### What I learned
 
 I learned alot. The first thing I learn is that I need a brush up in my JavaScript which is exactly what I did. I utilized some of the knowledge I had to be able to return data from a function as an array which is how I get the output results. It was a lot of trial an error but definitly a lot of fun seeing where I could improve my skills in javascript.
 
+This was my first project also implementing **GSAP** to my code, it's actually the first animation you see when it loads.
+
+I did a lot of thinking and logging on this project but this has reminded me that this is for me. Coding and building projects is for me.
+
 ### Code Highlights
 
-<h3 style="color:#25a8b5; font-weight:bold">Tailwind CSS</h3>
+<h3 styles="font-weight:bold">Tailwind CSS</h3>
 My First customs Tailwind CSS classes help me create the input and when ever they have an error.
 
 ```css
@@ -75,17 +79,30 @@ My First customs Tailwind CSS classes help me create the input and when ever the
 }
 ```
 <br>
-<h3 style="color: #cbc127; font-weight: bold;">Javascript</h3>
+<h3 style=" font-weight: bold;">Javascript</h3>
 This variable stores the number of days there are in the month that the user inputs. Once the user clicks enter the value inside this variable gets used to determine whether or not the user inputed the correct amount of days in the specific month they chose.
 
-```js
+```javascript
 let daysInTheMonth = new Date(inputYear.value, inputMonth.value, 0).getDate(); 
 
 if(inputDay.value > daysInTheMonth){
     errorCheck(inputDay, dayLabel, errorDay);
     errorDay.innerHTML = "Must be a valid day";
   }
-
+```
+```javascript
+function countUp(currentAgeResults, dateOutPut){
+  let output = 0;
+  let interval = setInterval(() => {
+    if(output == currentAgeResults) {
+      dateOutPut.innerHTML = output;
+      clearInterval(interval);
+      return;
+    }
+    dateOutPut.innerHTML = output;
+    output++;
+  },50);
+};
 ```
 
 ### Continued development

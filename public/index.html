@@ -24,19 +24,19 @@
 
         <div class="w-40 gap-2 relative">
           <label id="label_day" for="Day" class="text-sm tracking-widest">Day</label>
-          <input id="input_day" type="number" placeholder="DD" class="input">
+          <input id="input_day" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="DD" class="input">
           <span id="error_day" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic  normal-case text-center absolute -bottom-9 -left-6 md:-bottom-5 md:-left-5"></span>
         </div>
 
         <div class="w-40 gap-2 relative">
           <label id="label_month" for="Month" class="text-sm tracking-widest">Month</label>
-          <input id="input_month" type="number" placeholder="MM" class="input">
+          <input id="input_month" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="MM" class="input">
           <span id="error_month" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic  normal-case text-center absolute -bottom-9 -left-6 md:-bottom-5 md:-left-5"></span>
         </div>
 
         <div class="w-40 gap-2 relative">
           <label id="label_year" for="Year" class="text-sm tracking-widest">Year</label>
-          <input id="input_year" name="year" maxlength="4" type="number" placeholder="YYYY" class="input">
+          <input id="input_year" name="year" maxlength="4" type="number" pattern="[0-9]*" inputmode="numeric" placeholder="YYYY" class="input">
           <span id="error_year" class=" transition-transform ease-in-out duration-300 text-xs font-poppins font-light italic normal-case text-center absolute -bottom-9 -left-6 md:-bottom-5 md:-left-5"></span>
         </div>
       </form>
